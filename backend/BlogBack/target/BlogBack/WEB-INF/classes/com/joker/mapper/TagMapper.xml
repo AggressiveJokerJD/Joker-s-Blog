@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joker.mapper.TagMapper">
+
+    <!-- 在数据库中插入一个标签 -->
+    <insert id="insertTag" parameterType="tag">
+        insert into tag(tag_name) values (#{tag_name});
+    </insert>
+
+    <select id="getTag" resultType="tag">
+        select * from tag where tag_name=#{tag_name};
+    </select>
+    
+    <select id="getAllTag" resultType="tag">
+        select * from tag;
+    </select>
+
+
+
+</mapper>

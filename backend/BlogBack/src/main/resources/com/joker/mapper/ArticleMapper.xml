@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.joker.mapper.ArticleMapper">
+    <!-- 在数据库中插入一篇文章 -->
+    <insert id="insertArticle" parameterType="article">
+        insert into article(title,pic_url,des,date,tags) values (#{title},#{pic_url},#{des},#{date},#{tags});
+    </insert>
+
+    <select id="getArticle" parameterType="string" resultType="article">
+        select * from article where title=#{title};
+    </select>
+
+    <select id="getAllArticle" resultType="article">
+        select * from article order by date ASC;
+    </select>
+
+
+</mapper>

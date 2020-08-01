@@ -1,0 +1,15 @@
+com\joker\mapper\EssayMapper.class
+com\joker\service\impl\ArticleMapperServiceImpl.class
+com\joker\service\EssayMapperService.class
+com\joker\pojo\Tag.class
+com\joker\service\impl\EssayMapperServiceImpl.class
+com\joker\service\ArticleMapperService.class
+com\joker\controller\EssayMapperController.class
+com\joker\mapper\ArticleMapper.class
+com\joker\pojo\Article_Tag.class
+com\joker\pojo\Article.class
+com\joker\pojo\Essay.class
+com\joker\util\COSClientUtil.class
+com\joker\controller\ArticleMapperController.class
+com\joker\mapper\TagMapper.class
+com\joker\util\COS\MyCOSClient.class
